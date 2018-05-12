@@ -9,11 +9,12 @@ import java.util.Date;
  * <p>Copyright: Copyright (c) 2018</p>
  * <p>Company: www.hanshow.com</p>
  * @author hanshow
- * @date 2018-05-12 18:29:15
+ * @date 2018-05-12 18:44:38
  * @version 1.0
  */
 public class MemberBase implements Serializable {
-    private static final long serialVersionUID = 1L;    /**
+    private static final long serialVersionUID = 1L;
+    /**
     * 分页查询条件
     */
     private String whereStr;

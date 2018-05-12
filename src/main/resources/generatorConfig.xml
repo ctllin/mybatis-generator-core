@@ -21,7 +21,7 @@
 		<!--数据库连接的信息：驱动类、连接地址、用户名、密码 -->
 		<!-- &amp;=&   &gt;=> &lt;=< -->
 		<jdbcConnection driverClass="com.mysql.cj.jdbc.Driver"
-			connectionURL="jdbc:mysql://192.168.2.221:3306/wise_base_member?useInformationSchema=true&amp;autoReconnect=true&amp;useUnicode=true&amp;characterEncoding=UTF-8&amp;zeroDateTimeBehavior=convertToNull" userId="root" 
+			connectionURL="jdbc:mysql://192.168.2.221:3306/wise_base_member?useInformationSchema=true&amp;autoReconnect=true&amp;useUnicode=true&amp;characterEncoding=UTF-8&amp;zeroDateTimeBehavior=convertToNull" userId="root"
 			password="clinkworld"  >
 		</jdbcConnection>
 		<!-- <jdbcConnection driverClass="oracle.jdbc.OracleDriver"
