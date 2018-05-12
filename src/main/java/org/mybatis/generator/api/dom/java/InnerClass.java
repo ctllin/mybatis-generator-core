@@ -300,7 +300,7 @@ public class InnerClass extends JavaElement {
 		if (shortName.endsWith("Criteria") || shortName.endsWith("Criterion") || shortName.endsWith("Example")) {
 
 		} else {
-			sb.append("\n").append("    private static final long serialVersionUID = 1L;");
+			sb.append("\n").append("    private static final long serialVersionUID = 1L;").append("\n");
 			sb.append("    /**").append("\n");
 			sb.append("    * 分页查询条件").append("\n");
 			sb.append("    */").append("\n");
