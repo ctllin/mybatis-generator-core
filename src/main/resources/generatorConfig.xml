@@ -23,7 +23,7 @@
 		<property name="beginningDelimiter" value="`"/>
 		<property name="endingDelimiter" value="`"/>
 
-		<plugin type="org.mybatis.generator.plugins.EqualsHashCodePlugin"></plugin> <!-- 生产的javabean包含hashCode方法 -->
+		<!--<plugin type="org.mybatis.generator.plugins.EqualsHashCodePlugin"></plugin> &lt;!&ndash; 生产的javabean包含hashCode方法 &ndash;&gt;-->
 		<plugin type="org.mybatis.generator.plugins.SerializablePlugin"></plugin> <!-- 生产的javabean implement Serializable -->
 		<plugin type="org.mybatis.generator.plugins.ToStringPlugin"></plugin> <!-- 生产的javabean包含toString方法 -->
 
