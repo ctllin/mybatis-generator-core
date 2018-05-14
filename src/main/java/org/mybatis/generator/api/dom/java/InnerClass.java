@@ -280,7 +280,7 @@ public class InnerClass extends JavaElement {
             }
 		}
         //modify by ctllin
-		// MemberBaseExample
+		// MemberBaseExample  	如果不使用该插件 	<plugin type="org.mybatis.generator.plugins.SerializablePlugin"></plugin> <!-- 生产的javabean implement Serializable -->
 		// GeneratedCriteria
 		// Criteria
 		// Criterion
@@ -289,7 +289,9 @@ public class InnerClass extends JavaElement {
 		} else {
 			// implements Cloneable, Serializable 
 			if(sb.toString().contains("implements")){
-				sb.append(", Serializable ");
+			    if(!sb.toString().contains("Serializable")){//没有使用该插件	<plugin type="org.mybatis.generator.plugins.SerializablePlugin"></plugin>
+                    sb.append(", Serializable ");
+                }
 			}else{
 				sb.append(" implements Serializable");
 			}
@@ -300,7 +302,9 @@ public class InnerClass extends JavaElement {
 		if (shortName.endsWith("Criteria") || shortName.endsWith("Criterion") || shortName.endsWith("Example")) {
 
 		} else {
-			sb.append("\n").append("    private static final long serialVersionUID = 1L;").append("\n");
+			//使用了<plugin type="org.mybatis.generator.plugins.SerializablePlugin"></plugin> 插件就不需要 下面这句话
+		    //sb.append("\n").append("    private static final long serialVersionUID = 1L;")
+            sb.append("\n");
 			sb.append("    /**").append("\n");
 			sb.append("    * 分页查询条件").append("\n");
 			sb.append("    */").append("\n");

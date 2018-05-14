@@ -1,4 +1,5 @@
 .idea/
 target/
-*/base/member/
+/src/main/java/com/hanshow/wise/base/member/dto
+/src/main/java/com/hanshow/wise/base/member/mapper/
 *.iml
