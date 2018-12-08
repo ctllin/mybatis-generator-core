@@ -2,7 +2,7 @@
 <!DOCTYPE generatorConfiguration
   PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
   "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
-
+<!-- 文件夹涉及到的分隔符在windows使用'\'在Linux中使用'/' 否则会执行后无法生成文件 -->
 <generatorConfiguration>
 
 
